@@ -113,10 +113,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		}
 
 		//敵の動き
-		if (Enemy::isAlive_) {
-			for (int i = 0; i < 2; i++) {
-				enemys[i]->Update();
-			}
+		for (int i = 0; i < 2; i++) {
+			enemys[i]->Update();
 		}
 
 		//弾と敵の当たり判定
@@ -159,10 +157,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		}
 
 		//敵の描画
-		if (Enemy::isAlive_) {
-			for (int i = 0; i < 2; i++) {
-				enemys[i]->Draw();
-			}
+		for (int i = 0; i < 2; i++) {
+			enemys[i]->Draw();
 		}
 
 		//自機の描画
